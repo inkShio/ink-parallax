@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Universal Parallax | Demo</title>
-	<link rel="stylesheet" type="text/css" href="css/demo.min.css">
+	<title>inkParallax | Demo</title>
+	<link rel="stylesheet" type="text/css" href="page.css">
+	<link rel="stylesheet" type="text/css" href="ink-parallax.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
-	<style>
-	</style>
 </head>
 
 <body>
-
 	<section class="container container--full">
 		<div class="content" style="position:relative;">
 			<div class="arrow" id="arrow"><img src="img/arrow-down.png"></div>
-			<h1>Universal Parallax</h1>
+			<h1>inkParallax</h1>
 			<p>A vanilla javascript plugin</p>
 		</div>
-		<div class="parallax bg1"></div>
+		<div class="ink-parallax bg1"></div>
 	</section>
 
 	<section class="container container--small">
@@ -29,7 +28,7 @@
 				Displays 100% of BG regardless
 			</p>
 		</div>
-		<div class="parallax" data-parallax-image="img/bg2.jpg"></div>
+		<div class="ink-parallax" data-parallax-image="img/bg2.jpg"></div>
 	</section>
 
 	<section class="container container--big">
@@ -40,16 +39,17 @@
 				No sweat
 			</p>
 		</div>
-		<div class="parallax" id="bg3"></div>
+		<div class="ink-parallax" id="bg3"></div>
 	</section>
 
 	<section class="container container--full">
 		<div class="content">
-			<h2>Universal Parallax</h2>
+			<h2>inkParallax</h2>
 			<p>
 				Automatically scales to the height of your container
 				<span class="hide-on-mobile"><br></span>
-				Check out <a href="https://www.npmjs.com/package/universal-parallax" target="_blank">npm</a> or <a href="https://github.com/marrio-h/universal-parallax" target="_blank">github</a> for docs and download
+				Check out <a href="https://www.npmjs.com/package/ink-parallax" target="_blank">npm</a> or <a
+					href="https://github.com/inkShio/ink-parallax" target="_blank">github</a> for docs and download
 			</p>
 			<p>
 				Photo credits in order of appearance from <a href="https://unsplash.com/" target="_blank">unsplash</a>
@@ -61,19 +61,19 @@
 				<a class="a--no-weight" href="https://unsplash.com/@jim_dons" target="_blank">James Donaldson</a>,
 				<a class="a--no-weight" href="https://unsplash.com/@jampatcon" target="_blank">James Connolly</a>
 			</p>
-			<p class="p--credits">Find me on git <a href="https://github.com/marrio-h" target="_blank">@marrio-h</a></p>
+			<p class="p--credits">Find me on git <a href="https://github.com/inkShio" target="_blank">@inkShio</a></p>
 
 		</div>
-		<div class="parallax" data-parallax-image="img/bg4.jpg"></div>
+		<div class="ink-parallax" data-parallax-image="img/bg4.jpg"></div>
 	</section>
 
-	<script src="../dist/universal-parallax.min.js"></script>
-	<script src="js/demo.min.js"></script>
+	<script src="page.min.js"></script>
+	<script src="ink-parallax.js"></script>
 	<script>
-		new universalParallax().init({
+		new inkParallax().init({
 			speed: 4
 		});
 	</script>
-
 </body>
+
 </html>
